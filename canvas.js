@@ -34,6 +34,9 @@ var imageData = ctx.getImageData(20, 20, 60, 60);
     food.draw();
     snake.update();
     snake.draw();
+    if (snake.eat(food)) {
+      food.randomLocation();
+    }
   }, 250);
 })();
 

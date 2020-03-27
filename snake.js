@@ -65,4 +65,12 @@ function Snake() {
     }
     // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch
   };
+
+  this.eat = function(food) {
+    if (this.x === food.x && this.y === food.y) {
+      return true;
+    } else {
+      return false;
+    }
+  };
 }

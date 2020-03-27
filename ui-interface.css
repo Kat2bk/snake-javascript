@@ -1,7 +1,16 @@
 /* web interface */
 
+header {
+  text-align: center;
+  color: rgb(8, 180, 8);
+  font-size: 30px;
+  padding: 3px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
 #canvas {
-  margin-top: 50px;
+  margin-top: 20px;
   display: block;
   margin-right: auto;
   margin-left: auto;

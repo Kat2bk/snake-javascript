@@ -17,16 +17,21 @@ const columns = canvas.width / pixel;
 
 var snake;
 
+var imageData = ctx.getImageData(20, 20, 60, 60);
+
 // setter function
 //  In JavaScript, a setter can be used to execute a function whenever a specified property is attempted to be changed. Setters are most often used in conjunction with getters to create a type of pseudo-property. It is not possible to simultaneously have a setter on a property that holds an actual value.
 
 (function setup() {
   snake = new Snake();
   snake.draw();
+  food = new Food();
+  food.randomLocation();
 
   window.setInterval(() => {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     // clearing the trail behind snake
+    food.draw();
     snake.update();
     snake.draw();
   }, 250);

@@ -28,15 +28,19 @@ function Snake() {
       case "Up":
         this.xSpeed = 0;
         this.ySpeed = -pixel + 1;
+        break;
       case "Down":
         this.xSpeed = 0;
         this.ySpeed = pixel + 1;
+        break;
       case "Left":
         this.xSpeed = -pixel + 1;
         this.ySpeed = 0;
+        break;
       case "Right":
         this.xSpeed = pixel + 1;
         this.ySpeed = 0;
+        break;
     }
     // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch
   };

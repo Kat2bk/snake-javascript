@@ -10,7 +10,7 @@ const ctx = canvas.getContext("2d");
 
 // we want to get this canvas into rows and columns to have a function for initial state and for the snake to move
 
-const pixel = 10;
+const pixel = 30;
 
 const rows = canvas.height / pixel;
 const columns = canvas.width / pixel;

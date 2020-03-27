@@ -7,11 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snake!</title>
     <link rel="stylesheet" href="ui-interface.css" />
+    <script>
+      // requiring in the global scope...requiring modules
+      require = () => ({});
+      module = {};
+      module.exports = () => ({});
+    </script>
   </head>
   <body>
     <canvas id="canvas" width="700" height="500"></canvas>
     <script src="base.js"></script>
     <script src="snake.js"></script>
     <script src="ui-interface.js"></script>
+    <!-- ui-interface requires snake and snake requires base -->
   </body>
 </html>

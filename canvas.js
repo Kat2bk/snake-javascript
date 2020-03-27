@@ -25,6 +25,8 @@ var snake;
   snake.draw();
 
   window.setInterval(() => {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    // clearing the trail behind snake
     snake.update();
     snake.draw();
   }, 250);

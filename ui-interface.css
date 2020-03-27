@@ -1,1 +1,20 @@
 /* web interface */
+
+header {
+  text-align: center;
+  color: rgb(8, 180, 8);
+  font-size: 30px;
+  padding: 3px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+#canvas {
+  margin-top: 20px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0;
+  padding-left: 0;
+  border: 2px solid black;
+}

@@ -9,9 +9,23 @@
     <link rel="stylesheet" href="ui-interface.css" />
   </head>
   <body>
-    <canvas id="canvas" width="700" height="500"></canvas>
-    <script src="base.js"></script>
-    <script src="snake.js"></script>
-    <script src="ui-interface.js"></script>
+    <header>SNAKE</header>
+    <canvas
+      id="canvas"
+      width="500"
+      height="600"
+      style="background-color: #fc5e03"
+    ></canvas>
+    <section class="hidden">
+      <div class="start">
+        <span>Play Snake?</span>
+      </div>
+    </section>
+    <!-- <script src="base.js"></script>
+    <script src="ui-interface.js"></script> -->
+    <!-- ui-interface requires snake and snake requires base -->
+    <script type="text/javascript" src="./food.js"></script>
+    <script type="text/javascript" src="./snake.js"></script>
+    <script type="text/javascript" src="./canvas.js"></script>
   </body>
 </html>

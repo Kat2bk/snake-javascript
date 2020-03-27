@@ -12,10 +12,14 @@ component must reset itself when it hits any corner of UI<br />
 
 # learning
 
+# excuse my notes in the files, it really organized what I was learning. Hopefully it helps.
+
 Learned about canvas tag... must set width and height<br />
 usually there is a main.min.js file where all files are uploaded from other files<br />
 
 base.js... defines global functions<br />
 ui-interface.js is entry point for web application<br />
 
-learning about modules...
+learning about modules...<br />
+
+ctx is an abbreviation of canvas context.<br />

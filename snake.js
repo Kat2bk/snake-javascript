@@ -14,13 +14,31 @@ function Snake() {
   //   sets movement by y
 
   this.draw = function() {
-    ctx.fillStyle = "#FFFFFF";
+    ctx.fillStyle = "#03fc6f";
     ctx.fillRect(this.x, this.y, pixel, pixel);
     // replacing x and y with pixel
   };
   this.update = function() {
     this.x += this.xSpeed;
     this.y += this.ySpeed;
+
+    // when snakes hits the limits of the canvas
+
+    if (this.x > canvas.width) {
+      this.x = 0;
+    }
+
+    if (this.y > canvas.height) {
+      this.y = 0;
+    }
+
+    if (this.x < 0) {
+      this.x = canvas.width;
+    }
+
+    if (this.y < 0) {
+      this.y = canvas.height;
+    }
   };
 
   this.changeDirection = function(direction) {

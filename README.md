@@ -4,11 +4,13 @@ practicing--with--javascript
 
 # thinking
 
-must have a CLI to display snake component...??<br />
-must be translated into GUI...?<br />
-component must move around<br />
-there must be an item that is randomized<br />
-component must reset itself when it hits any corner of UI<br />
+must display snake inside a box...[finished]<br />
+snake must move around... [finished]<br />
+snake must reset if hits edge of box... []<br />
+there must be an item that is randomized []<br />
+snake must increase in size if item is touched []<br />
+score box... []<br />
+there must be some kind of prompt to allow user to start playing...[]<br />
 
 # learning
 
@@ -16,9 +18,6 @@ component must reset itself when it hits any corner of UI<br />
 
 Learned about canvas tag... must set width and height<br />
 usually there is a main.min.js file where all files are uploaded from other files<br />
-
-base.js... defines global functions<br />
-ui-interface.js is entry point for web application<br />
 
 learning about modules...<br />
 

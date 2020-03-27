@@ -1,1 +1,11 @@
 /* web interface */
+
+#canvas {
+  margin-top: 50px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0;
+  padding-left: 0;
+  border: 2px solid black;
+}

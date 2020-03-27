@@ -17,7 +17,10 @@ function Snake() {
     ctx.fillStyle = "#03fc6f";
     ctx.fillRect(this.x, this.y, pixel, pixel);
     // replacing x and y with pixel
+    ctx.strokeStyle = "yellow";
+    ctx.strokeRect(this.x, this.y, pixel, pixel);
   };
+
   this.update = function() {
     this.x += this.xSpeed;
     this.y += this.ySpeed;

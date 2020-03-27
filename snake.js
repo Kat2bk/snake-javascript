@@ -22,4 +22,22 @@ function Snake() {
     this.x += this.xSpeed;
     this.y += this.ySpeed;
   };
+
+  this.changeDirection = function(direction) {
+    switch (direction) {
+      case "Up":
+        this.xSpeed = 0;
+        this.ySpeed = -pixel + 1;
+      case "Down":
+        this.xSpeed = 0;
+        this.ySpeed = pixel + 1;
+      case "Left":
+        this.xSpeed = -pixel + 1;
+        this.ySpeed = 0;
+      case "Right":
+        this.xSpeed = pixel + 1;
+        this.ySpeed = 0;
+    }
+    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch
+  };
 }

@@ -33,3 +33,14 @@ var snake;
 })();
 
 // setInterval is setting a timer
+// adding event listeners for keypress
+// we want to change direction... add the function to the snake Object
+
+window.addEventListener("keydown", e => {
+  console.log(e);
+  const direction = e.key.replace("Arrow", "");
+  console.log(direction);
+  snake.changeDirection(direction);
+});
+
+// https://alligator.io/js/string-replace/... object rename... looking to see what the key is named to apply it to direction
